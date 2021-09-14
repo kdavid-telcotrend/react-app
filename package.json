@@ -1,0 +1,35 @@
+{
+  "name": "react-node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "proxy": {
+    "/api/*": {
+      "target": "http://localhost:8080",
+      "secure": false
+    }
+  },
+  "secure": false,
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.0.0-alpha.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "react-bootstrap": "^0.32.1",
+    "react-bootstrap-navbar": "^1.1.0",
+    "react-validation": "^3.0.7",
+    "validator": "^13.6.0"
+  }
+}
